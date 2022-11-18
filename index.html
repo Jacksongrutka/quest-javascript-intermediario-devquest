@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+</head>
+<body>
+    <main>
+        <section class="container">
+            <div class="container-texto">
+                <h1>FICOU COM DÚVIDA?<br> NOS MANDE UMA MENSAGEM!</h1>
+                <p>caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+            </div>
+            <form class="formulario" method="get">
+                <div class="container-input dados ">
+                    <input class="dado-usuario" type="text" name="Name" id="name" placeholder="Nome completo *" >
+                </div>
+                <div class="container-input dados ">
+                    <input class="dado-usuario" type="email" name="e-mail" id="e-mail" placeholder="E-mail *">
+                </div>
+                <div class="container-input dados ">
+                    <input class="dado-usuario" type="tel" name="number" id="number" placeholder="Telefone *">
+                </div>
+                <div class="container-input mensagem ">
+                    <textarea class="dado-usuario" name="message" id="message" placeholder="Mensagem *"></textarea>
+                    <p>campo obrigatório</p>
+                </div>
+                
+                <h3>*campos obrigatórios</h3>
+                <input class="btn-enviar" id="btn-enviar" type="button" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <script src="./src/JS/formulario.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+body{
+    background-color: #E5E5E5;
+}
+html{
+    font-family: 'roboto';
+}
+main{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background:url(../images/bg-repeat.jpg) center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 800px;
+    min-height: 400px;
+
+}
+.container .container-texto{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-left: 50px;
+}
+.container .container-texto h1{
+    color: #fff;
+    font-weight: 900;
+    line-height: 24px;
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+.container .container-texto p{
+    color: #fff;
+    font-weight: 400;
+    line-height: 18px;
+    font-size: 1.5rem;
+}
+.container .formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 340px;
+    height: 380px;
+    background-color: #fff;
+    margin-right: 50px;
+    position: relative;
+}
+.container .formulario .container-input{
+    position: relative;
+}
+.container .formulario input{
+    width: 300px;
+    height: 35px;
+    margin-bottom: 15px;
+    font-family: 'roboto';
+    text-indent: 9px;
+    border: 1px black solid;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.container .formulario .container-input:first-child{
+    margin-top: 20px;
+}
+.container .formulario .mensagem textarea{
+    width: 300px;
+    height: 100px;
+    font-family: 'roboto';
+    text-indent: 9px;
+    line-height: 25px;
+    border: 1px black solid;
+    border-radius: 5px;
+    resize: none;
+}
+.container .formulario .mensagem p{
+    display: none;
+}
+.container .formulario .mensagem textarea::-webkit-input-placeholder{
+    line-height: 25px; 
+  }
+.container .formulario h3{
+    padding: 10px 0 0 20px;
+    align-self: flex-start;
+    letter-spacing: 1px;
+}
+.container .formulario .btn-enviar{
+    position: absolute;
+    bottom: 7px;
+    height: 40px;
+    color: #fff;
+    background-color: #3CCC87;
+    text-indent: 0;
+    border: none;
+    cursor: pointer;
+}
+.container .formulario .dados.container-input.nao-preenchido::after{
+    content: "campo obrigatório";
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    color: red;
+}
+.container .formulario .mensagem.nao-preenchido p{
+    display: block;
+    color: red;
+    line-height: 5px;
+}
+.container .formulario .container-input.nao-preenchido .dado-usuario{
+    border-color: red;
+}
+
+.container .formulario .container-input.preenchido .dado-usuario{
+    border-color: #00C22B;
+}
